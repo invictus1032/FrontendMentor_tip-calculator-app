@@ -15,30 +15,50 @@
   </style>
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
+  <h1>SPLI<br>TTER</h1>
+  <section>
+    <form action="">
+      <div>
+        <label for="bill">Bill</label><br>
+        <input type="number" name="bill" id="bill">
+      </div>
+      <div>
+        <label for="">Select Tip %</label>
+        <div class="tip-option">5%</div>
+        <div class="tip-option">10%</div>
+        <div class="tip-option">15%</div>
+        <div class="tip-option">25%</div>
+        <div class="tip-option">50%</div>
+        <div class="tip-option">Custom</div>
+      </div>
+      <div>
+        <label for="people-number"></label>
+        <input type="number" name="people-number" id="people-number">
+      </div>
+    </form>
+  </section>
+  <section>
+    <div>
+      <div>
+        <p>Tip Amount</p>
+        <p>/ person</p>
+      </div>
+      <p id="result-tip">[Amount]</p>
+    </div>
+    <div>
+      <div>
+        <p>Tip Amount</p>
+        <p>/ person</p>
+      </div>
+      <p id="result-total">[Amount]</p>
+    </div>
+    <button id="reset-button">Reset</button>
+  </section>
+  <main>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">invictus1032</a>.
   </div>
 </body>
 </html>
