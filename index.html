@@ -16,13 +16,13 @@
   </style>
 </head>
 <body class="bg-blue-200">
-  <h1>SPLI<br>TTER</h1>
-  <main class="bg-white flex flex-wrap">
+  <h1 class="text-center">SPLI<br>TTER</h1>
+  <main class="bg-white p-4">
     <section class="">
       <form action="" class="">
         <div>
           <label class="input-label" for="bill">Bill</label><br>
-          <input type="number" name="bill" id="bill">
+          <input class="p-2-text-right w-full" type="number" name="bill" id="bill" value="142.55">
         </div>
         <div>
           <p class="input-label">Select Tip %</p>
@@ -37,31 +37,31 @@
         </div>
         <div>
           <label class="input-label" for="people-number">Number of People</label>
-          <input type="number" name="people-number" id="people-number">
+          <input class="p-2 text-right" type="number" name="people-number" id="people-number" value="5">
         </div>
       </form>
     </section>
-    <section>
-      <div>
+    <section class="bg-green-900 text-white p-4">
+      <div class="flex justify-between">
         <div>
           <p>Tip Amount</p>
-          <p>/ person</p>
+          <p class="text-sm opacity-50">/ person</p>
         </div>
-        <p id="result-tip">[Amount]</p>
+        <p class="text-green-400" id="result-tip">$4.27</p>
       </div>
-      <div>
+      <div class="flex justify-between">
         <div>
           <p>Tip Amount</p>
-          <p>/ person</p>
+          <p class="text-sm opacity-50">/ person</p>
         </div>
-        <p id="result-total">[Amount]</p>
+        <p class="text-green-400" id="result-total">$32.79</p>
       </div>
-      <button id="reset-button">Reset</button>
+      <button class="py-2 bg-green-600  w-[100%] mx-auto my-4 block" id="reset-button">Reset</button>
     </section>
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">invictus1032</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/invictus1032">invictus1032</a>.
   </div>
 </body>
 </html>

@@ -2,12 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-animation: textfield;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+}
+
 @layer components {
     .tip-option {
         @apply bg-blue-800 text-white rounded-l;
         @apply w-[100px] text-center p-2;
     }
     .input-label {
-        @apply opacity-80;
+        @apply opacity-70 mb-3;
     }
 }
