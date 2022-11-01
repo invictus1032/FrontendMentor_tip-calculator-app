@@ -2,7 +2,9 @@
 module.exports = {
   content: ["./index.html", "script.js"],
   theme: {
-    extend: {},
+    fontFamily: {
+      "SpaceMono":["Space Mono"]
+    }
   },
   plugins: [],
 }
