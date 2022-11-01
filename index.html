@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -14,47 +15,49 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="bg-blue-200">
   <h1>SPLI<br>TTER</h1>
-  <section>
-    <form action="">
+  <main class="bg-white flex flex-wrap">
+    <section class="">
+      <form action="" class="">
+        <div>
+          <label class="input-label" for="bill">Bill</label><br>
+          <input type="number" name="bill" id="bill">
+        </div>
+        <div>
+          <p class="input-label">Select Tip %</p>
+          <div class="flex flex-wrap gap-4">
+            <div class="tip-option">5%</div>
+            <div class="tip-option">10%</div>
+            <div class="tip-option">15%</div>
+            <div class="tip-option">25%</div>
+            <div class="tip-option">50%</div>
+            <div class="tip-option">Custom</div>
+          </div>
+        </div>
+        <div>
+          <label class="input-label" for="people-number">Number of People</label>
+          <input type="number" name="people-number" id="people-number">
+        </div>
+      </form>
+    </section>
+    <section>
       <div>
-        <label for="bill">Bill</label><br>
-        <input type="number" name="bill" id="bill">
+        <div>
+          <p>Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <p id="result-tip">[Amount]</p>
       </div>
       <div>
-        <label for="">Select Tip %</label>
-        <div class="tip-option">5%</div>
-        <div class="tip-option">10%</div>
-        <div class="tip-option">15%</div>
-        <div class="tip-option">25%</div>
-        <div class="tip-option">50%</div>
-        <div class="tip-option">Custom</div>
+        <div>
+          <p>Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <p id="result-total">[Amount]</p>
       </div>
-      <div>
-        <label for="people-number"></label>
-        <input type="number" name="people-number" id="people-number">
-      </div>
-    </form>
-  </section>
-  <section>
-    <div>
-      <div>
-        <p>Tip Amount</p>
-        <p>/ person</p>
-      </div>
-      <p id="result-tip">[Amount]</p>
-    </div>
-    <div>
-      <div>
-        <p>Tip Amount</p>
-        <p>/ person</p>
-      </div>
-      <p id="result-total">[Amount]</p>
-    </div>
-    <button id="reset-button">Reset</button>
-  </section>
-  <main>
+      <button id="reset-button">Reset</button>
+    </section>
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

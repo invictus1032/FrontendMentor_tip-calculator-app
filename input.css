@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .tip-option {
+        @apply bg-blue-800 text-white rounded-l;
+        @apply w-[100px] text-center p-2;
+    }
+    .input-label {
+        @apply opacity-80;
+    }
+}
