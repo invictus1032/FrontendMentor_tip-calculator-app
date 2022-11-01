@@ -21,10 +21,11 @@
         @apply w-[100px] text-center p-2;
     }
     .input-label {
-        @apply opacity-70 mb-3;
+        @apply opacity-70 mb-3 text-sm;
     }
 
     .input-number {
-        @apply p-2 text-right w-full;
+        @apply text-right w-full text-xl text-green-900;
+        @apply p-2;
     }
 }
