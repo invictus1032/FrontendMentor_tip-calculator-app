@@ -5,27 +5,30 @@ interface input extends Element {
 const bill:input = document.querySelector("#bill")
 const peopleNumber:input = document.querySelector("#people-number");
 const tips = document.querySelectorAll("div.tip-option");
-const customTip = document.querySelector("input.tip-option");
+const customTip:input = document.querySelector("input.tip-option");
 const resetButton = document.querySelector("#reset-button");
 
 const tipAmountElement = document.querySelector("#result-tip");
 const totalElement = document.querySelector("#result-total");
 
-let selectedTip:Element;
+let selectedTip:string;
 
 for (let tip of tips) {
     tip.addEventListener("click", (e) => {
-        selectedTip = tip;
+        selectedTip = tip.textContent;
         console.log(selectedTip)
     })
     tip.addEventListener("click", resultUpdater);
 }
+customTip.addEventListener("change", (e) => {
+    selectedTip = String(customTip.value)
+});
 
-[bill, peopleNumber].forEach(input => input.addEventListener("change", resultUpdater));
+[bill, peopleNumber, customTip].forEach(input => input.addEventListener("change", resultUpdater));
 
 function resultUpdater() {
     if (!areAllInputsFilled()) { return }
-    const [resultAmount, resultTotal] = computeResult(+bill.value, +peopleNumber.value, selectedTip.textContent)
+    const [resultAmount, resultTotal] = computeResult(+bill.value, +peopleNumber.value, selectedTip)
     updateResult(resultAmount, resultTotal);
     console.log("Result Updated")
     console.log({resultAmount, resultTotal})
