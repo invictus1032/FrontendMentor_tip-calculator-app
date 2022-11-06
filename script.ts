@@ -47,7 +47,8 @@ function calculateBill(totalBill:number, people:number):number {
 function calculateTip(totalBill:number, tipPercentage:string, people:number):number {
     let _tipPercentage:number =  Number(tipPercentage.split("%")[0]) / 100;
     const totalTip = totalBill * _tipPercentage;
-    const tipPerPerson = people/totalTip;
+    console.log({totalTip, totalBill, _tipPercentage})
+    const tipPerPerson = totalTip/people;
     return tipPerPerson;
 }
 
