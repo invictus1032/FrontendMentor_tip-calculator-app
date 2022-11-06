@@ -1,5 +1,5 @@
 interface input extends Element {
-    value:number
+    value:string
 }
 
 const bill:input = document.querySelector("#bill")
@@ -21,7 +21,7 @@ for (let tip of tips) {
     tip.addEventListener("click", resultUpdater);
 }
 customTip.addEventListener("change", (e) => {
-    selectedTip = String(customTip.value)
+    selectedTip = customTip.value
 });
 
 [bill, peopleNumber, customTip].forEach(input => input.addEventListener("change", resultUpdater));
