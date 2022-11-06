@@ -63,8 +63,8 @@ function calculateTip(totalBill:number, tipPercentage:string, people:number):num
 
 
 function updateResult(tipAmount:number, total:number) {
-    tipAmountElement.textContent = String(tipAmount.toFixed(2));
-    totalElement.textContent = String(total.toFixed(2));
+    tipAmountElement.textContent = "$" + String(tipAmount.toFixed(2));
+    totalElement.textContent = "$" + String(total.toFixed(2));
 }
 
 function resetSplitter() {
