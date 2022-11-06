@@ -70,6 +70,7 @@ function updateResult(tipAmount:number, total:number) {
 function resetSplitter() {
     bill.value = "";
     selectedTip = null;
+    customTip.value = "";
     peopleNumber.value = "";
     updateResult(0, 0);
 }
