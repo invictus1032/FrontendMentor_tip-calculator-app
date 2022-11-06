@@ -66,3 +66,12 @@ function updateResult(tipAmount:number, total:number) {
     tipAmountElement.textContent = String(tipAmount.toFixed(2));
     totalElement.textContent = String(total.toFixed(2));
 }
+
+function resetSplitter() {
+    bill.value = "";
+    selectedTip = null;
+    peopleNumber.value = "";
+    updateResult(0, 0);
+}
+
+resetButton.addEventListener("click", resetSplitter);
