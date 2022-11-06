@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./output.css">
+  <script src="./script.js" defer></script>
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,7 @@
       <form action="" class="flex flex-col gap-4">
         <div>
           <label class="input-label" for="bill">Bill</label><br>
-          <input class="input-number" type="number" name="bill" id="bill" value="142.55">
+          <input class="input-number" type="number" name="bill" id="bill" value="" placeholder="0">
         </div>
         <div>
           <p class="input-label">Select Tip %</p>
@@ -38,12 +39,12 @@
             <div class="tip-option">15%</div>
             <div class="tip-option">25%</div>
             <div class="tip-option">50%</div>
-            <div class="tip-option text-black text-opacity-60 bg-gray-100">Custom</div>
+            <input type="text" placeholder="Custom" class="tip-option block text-black text-opacity-60 bg-gray-100">
           </div>
         </div>
         <div>
           <label class="input-label" for="people-number">Number of People</label>
-          <input class="input-number" type="number" name="people-number" id="people-number" value="5">
+          <input class="input-number" type="number" name="people-number" id="people-number" value="" placeholder="0">
         </div>
       </form>
     </section>
@@ -53,14 +54,14 @@
           <p class="text-xs mb-1">Tip Amount</p>
           <p class="text-xs opacity-50">/ person</p>
         </div>
-        <p class="text-green-400 text-2xl" id="result-tip">$4.27</p>
+        <p class="text-green-400 text-2xl" id="result-tip">$0.00</p>
       </div>
       <div class="flex justify-between">
         <div>
           <p class="text-xs mb-1">Total</p>
           <p class="text-xs opacity-50 mb-4">/ person</p>
         </div>
-        <p class="text-green-400 text-2xl" id="result-total">$32.79</p>
+        <p class="text-green-400 text-2xl" id="result-total">$0.00</p>
       </div>
       <button class="mt-auto bg-green-600 text-black py-2 mb-2 w-[100%] mx-auto block" id="reset-button">RESET</button>
     </section>
