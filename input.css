@@ -18,7 +18,7 @@
 @layer components {
     .tip-option {
         @apply bg-blue-800 text-white rounded-l;
-        @apply w-[100px] text-center p-2;
+        @apply text-center p-2;
     }
     .input-label {
         @apply opacity-70 mb-3 text-sm;
