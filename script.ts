@@ -17,12 +17,18 @@ for (let tip of tips) {
     tip.addEventListener("click", (e) => {
         selectedTip = tip;
         console.log(selectedTip)
-        if (!areAllInputsFilled()) { return }
-        const [resultAmount, resultTotal] = computeResult(+bill.value, +peopleNumber.value, selectedTip.textContent)
-        updateResult(resultAmount, resultTotal);
-        console.log("Result Updated")
-        console.log({resultAmount, resultTotal})
     })
+    tip.addEventListener("click", resultUpdater);
+}
+
+[bill, peopleNumber].forEach(input => input.addEventListener("change", resultUpdater));
+
+function resultUpdater() {
+    if (!areAllInputsFilled()) { return }
+    const [resultAmount, resultTotal] = computeResult(+bill.value, +peopleNumber.value, selectedTip.textContent)
+    updateResult(resultAmount, resultTotal);
+    console.log("Result Updated")
+    console.log({resultAmount, resultTotal})
 }
 
 function computeResult(totalBill:number, people:number, tipPercentage:string) {
