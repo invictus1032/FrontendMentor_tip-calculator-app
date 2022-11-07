@@ -37,6 +37,16 @@
         @apply p-2 bg-gray-100;
     }
 
+    .correct-input {
+        outline: solid;
+        outline-color: greenyellow
+    }
+
+    .incorrect-input {
+        outline:solid;
+        outline-color: red;
+    }
+
     .icon {
         @apply relative top-8 left-5;
     }

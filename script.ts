@@ -89,3 +89,27 @@ function changeState(element:any) {
     element.classList.toggle("unselected");
     element.classList.toggle("selected");
 }
+
+const inputNumberAll = document.querySelectorAll(".input-number-all");
+for (let i = 0; i < inputNumberAll.length; i++) {
+    let input = inputNumberAll[i] as input;
+    input.addEventListener("keyup", (e) => {
+        if (input.value === "0") {
+            applyError(input, "Can't be zero");
+        } else {
+            applyApproval(input)
+        }
+        console.log(e)
+        console.log(input.value)
+    })
+}
+
+function applyError(input:input, message:string) {
+    input.classList.remove("correct-input");
+    input.classList.add("incorrect-input");
+}
+
+function applyApproval(input:input) {
+    input.classList.remove("incorrect-input");
+    input.classList.add("correct-input");
+}
