@@ -4,7 +4,7 @@ interface input extends Element {
 
 const bill:input = document.querySelector("#bill")
 const peopleNumber:input = document.querySelector("#people-number");
-const tips = document.querySelectorAll("div.tip-option");
+const tips = document.querySelectorAll("button.tip-option");
 const customTip:input = document.querySelector("input.tip-option");
 const resetButton = document.querySelector("#reset-button");
 
@@ -12,13 +12,21 @@ const tipAmountElement = document.querySelector("#result-tip");
 const totalElement = document.querySelector("#result-total");
 
 let selectedTip:string;
+let currentSelectedTip:Element;
+let lastSelectedTip:Element;
 
 for (let tip of tips) {
     tip.addEventListener("click", (e) => {
         selectedTip = tip.textContent;
+        lastSelectedTip = currentSelectedTip;
+        currentSelectedTip = tip;
         console.log(selectedTip)
     })
     tip.addEventListener("click", resultUpdater);
+    tip.addEventListener("click", (e) => {
+        changeState(tip);
+        if (lastSelectedTip) changeState(lastSelectedTip);
+    });
 }
 customTip.addEventListener("change", (e) => {
     selectedTip = customTip.value
@@ -76,3 +84,8 @@ function resetSplitter() {
 }
 
 resetButton.addEventListener("click", resetSplitter);
+
+function changeState(element:any) {
+    element.classList.toggle("unselected");
+    element.classList.toggle("selected");
+}
