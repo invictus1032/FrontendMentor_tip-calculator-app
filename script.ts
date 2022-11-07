@@ -96,7 +96,7 @@ for (let i = 0; i < inputNumberAll.length; i++) {
     input.addEventListener("keyup", (e) => {
         if (/0+/.test(input.value)) {
             applyError(input, "Can't be zero");
-        } else if (/\D/.test(input.value) || input.value === "") {
+        } else if (/[^\d.]/.test(input.value) || input.value === "") {
             applyError(input, "Only accept numbers")
         } else {
             applyApproval(input);
