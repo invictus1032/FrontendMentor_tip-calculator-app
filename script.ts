@@ -94,10 +94,12 @@ const inputNumberAll = document.querySelectorAll(".input-number-all");
 for (let i = 0; i < inputNumberAll.length; i++) {
     let input = inputNumberAll[i] as input;
     input.addEventListener("keyup", (e) => {
-        if (input.value === "0") {
+        if (/0+/.test(input.value)) {
             applyError(input, "Can't be zero");
+        } else if (/\D/.test(input.value) || input.value === "") {
+            applyError(input, "Only accept numbers")
         } else {
-            applyApproval(input)
+            applyApproval(input);
         }
         console.log(e)
         console.log(input.value)
