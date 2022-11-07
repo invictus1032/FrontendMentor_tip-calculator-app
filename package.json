@@ -6,6 +6,6 @@
   "scripts": {
     "watch-css": "npx tailwindcss -i input.css -o output.css --watch",
     "watch-ts": "tsc --watch",
-    "build": "tsc && npx tailwindcss -i input.css -o output.css"
+    "build": "npx tsc && npx tailwindcss -i input.css -o output.css"
   }
 }
