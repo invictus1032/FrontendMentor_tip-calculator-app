@@ -14,7 +14,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -30,15 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Desktop
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![](./screenshots/desktop.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+#### Mobile
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshots/mobile.png)
 
 ### Links
 
@@ -50,63 +47,42 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- CSS Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Tailwind](https://tailwindcss.com/) - CSS library
+- [TypeScript](https://www.typescriptlang.org/) - TypeScript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+#### Layout
 
-To see how you can add code snippets, see below:
+This project is the hardest I've built so far. It's much more complicated than it looks. Surprisingly, the tip calculation part isn't the hardest, it's the layout (CSS). In the end, I learned that I shouldn't have been fixed on a single layout tool. 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+I was stuck for hours trying to figure out how to make my flexbox work as intended. The tip boxes just kept taking the whole screen. And the flex-wrap is hard to control when you want to manipulate both the vertical and horizontal axis. Then I realized, that's why Grid was invented. 
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+#### Mobile First Workflow
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+This is my first time actually trying to design the layout exactly from mobile. Usually I still throw in a bunch of CSS rules that apply to desktop while I'm still working on the mobile layout. To be honest, it feels much better. It's easier to start because you start simple. It's also easy to layout because the initial layout is simple. And then It'll get progressively complex as you support bigger devices into your code. 
+
+It's easier than starting right from the most complex layout.
+
+#### Divide Task
+
+From this project, I've learned that it's easier to divide the problem into multiple parts instead of working all of thema t once. For example, I can work on the HTML first, then the CSS, then JS. In CSS, I can further divide it into Layout, Font, Color, Active State, etc. With git branching, this is even a lot easier to do. I can go around messing things up without affecting the master branch. 
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects, I'll try to use CSS Grid more often because sometimes it's far more appropiate than Flexbox. 
 
 **Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Tailwind Breakpoints](https://tailwindcss.com/docs/responsive-design) - Kept referencing to this page because I don't fully remember the breakpoints.
+- [Tailwind Cheatsheet](https://tailwindcomponents.com/cheatsheet/) - Sometimes my tailwind intellisense doesn't show up, so this cheatsheet helps a lot. 
+- [Stackoverflow](https://stackoverflow.com/) - No explanation needed :)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@invictus1032](https://www.frontendmentor.io/profile/invictus1032)
