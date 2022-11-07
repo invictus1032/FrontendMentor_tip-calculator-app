@@ -17,8 +17,15 @@
 
 @layer components {
     .tip-option {
-        @apply bg-blue-800 text-white rounded-l;
         @apply text-center p-2 text-2xl;
+    }
+
+    .unselected {
+        @apply bg-blue-800 text-white rounded-l;
+    }
+
+    .selected {
+        @apply bg-green-400 text-black;
     }
 
     .input-label {
