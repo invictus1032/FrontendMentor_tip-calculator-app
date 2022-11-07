@@ -62,4 +62,8 @@
     button.tip-option:active, #reset-button:active {
         @apply bg-green-300 text-black;
     }
+
+    .custom-tip::placeholder {
+        @apply opacity-60 text-green-900;
+    }
 }
