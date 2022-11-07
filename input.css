@@ -27,6 +27,7 @@
     .input-number {
         @apply text-right w-full text-xl text-green-900;
         @apply p-2 bg-gray-100;
+        @apply rounded-md;
     }
 
     main {
