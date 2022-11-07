@@ -20,14 +20,6 @@
         @apply text-center p-2 text-2xl;
     }
 
-    .unselected {
-        @apply bg-blue-800 text-white rounded-l;
-    }
-
-    .selected {
-        @apply bg-green-400 text-black;
-    }
-
     .input-label {
         @apply opacity-70 mb-3 text-base;
     }
@@ -35,6 +27,21 @@
     .input-number {
         @apply text-right w-full text-xl text-green-900;
         @apply p-2 bg-gray-100;
+    }
+
+    main {
+        @apply bg-white p-10  mx-auto rounded-3xl;
+        @apply lg:min-h-[460px] lg:grid lg:grid-cols-2 lg:gap-10 max-w-[90%] xl:max-w-[70%] 2xl:max-w-[60%];
+    }
+}
+
+@layer utilities {
+    .unselected {
+        @apply bg-blue-800 text-white rounded-l;
+    }
+
+    .selected {
+        @apply bg-green-400 text-black;
     }
 
     .correct-input {
@@ -49,10 +56,5 @@
 
     .icon {
         @apply relative top-8 left-5;
-    }
-
-    main {
-        @apply bg-white p-10  mx-auto rounded-3xl;
-        @apply lg:min-h-[460px] lg:grid lg:grid-cols-2 lg:gap-10 max-w-[90%] xl:max-w-[70%] 2xl:max-w-[60%];
     }
 }
