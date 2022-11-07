@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-tip-calculator-with-tailwindcss-and-typescript-vz5nNM4gJQ)
+- Live Site URL: [Netlify](https://fem-invictus1032-4.netlify.app/)
 
 ## My process
 
